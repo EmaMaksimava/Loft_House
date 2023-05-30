@@ -1,5 +1,6 @@
 /*Base*/
 /* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -86,6 +87,15 @@ label {
 
 legend {
   display: block;
+}
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+body {
+  font-family: "Raleway", sans-serif;
 }
 
 body {
