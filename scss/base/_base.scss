@@ -2,4 +2,16 @@
 
 body {
   font-family: $font-main;
+  background-color: $dark;
+  font-size: 16px;
+  color: $white
+}
+
+a {
+  color: $white;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $accent;
+  }
 }

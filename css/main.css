@@ -91,5 +91,25 @@ legend {
 
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #242B33;
+  font-size: 16px;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+a:hover {
+  color: #d4c17f;
+}
+
+/*Blocks*/
+.header {
+  min-height: 840px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242B33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242B33)), url("./../img/header/Rectangle.jpg");
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("./../img/header/Rectangle.jpg");
 }
 /*# sourceMappingURL=main.css.map */
