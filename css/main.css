@@ -311,11 +311,28 @@ a:hover {
   will-change: transform;
 }
 
+.apartments__card-item::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
 .apartments__card-item:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   -webkit-filter: brightness(150%);
           filter: brightness(150%);
+}
+
+.apartments__card-item:hover::after {
+  opacity: 1;
 }
 
 .apartments__card-1 {
