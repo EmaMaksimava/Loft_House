@@ -143,6 +143,53 @@ a:hover {
           align-items: center;
 }
 
+.header__title {
+  position: relative;
+  padding-bottom: 121px;
+  font-family: "Playfair Display", serif;
+  color: #d4c17f;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+
+.header__title-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.header__title-icon:hover {
+  -webkit-filter: brightness(175%);
+          filter: brightness(175%);
+}
+
+.header__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__footer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 98px;
+}
+
 .nav {
   font-size: 14px;
 }
@@ -152,5 +199,29 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
+}
+
+.info {
+  font-size: 18px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.info::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+
+.info__address::before {
+  background-image: url("./../img/icons/placeholder.svg");
+}
+
+.info__tel::before {
+  background-image: url("./../img/icons/phone-call.svg");
 }
 /*# sourceMappingURL=main.css.map */
