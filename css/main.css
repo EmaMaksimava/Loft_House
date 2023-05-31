@@ -112,6 +112,14 @@ a:hover {
   max-width: 1140px;
 }
 
+.visually-hidden {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
 /*Blocks*/
 .header {
   display: -webkit-box;
@@ -223,5 +231,53 @@ a:hover {
 
 .info__tel::before {
   background-image: url("./../img/icons/phone-call.svg");
+}
+
+.benefits {
+  margin: 120px auto;
+}
+
+.benefits-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 70px;
+}
+
+.benefits__item {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 53px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits__item-img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.benefits__item-text {
+  max-width: 193px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.35;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
