@@ -37,3 +37,30 @@ a {
   color: $accent;
   line-height: 1.33;
 }
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 35px;
+  column-gap: 30px;
+
+}
+
+.input-form {
+  max-width: 255px;
+  min-height: 50px;
+  background: #FFFFFF;
+  opacity: 0.2;
+  text-align: center;
+  color: #BEBEBE;
+
+}
+
+.form-button {
+  max-width: 255px;
+  min-height: 50px;
+  background-color: $accent;
+  text-align: center;
+  font-weight: 700;
+}

@@ -127,6 +127,35 @@ a:hover {
   line-height: 1.33;
 }
 
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  row-gap: 35px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.input-form {
+  max-width: 255px;
+  min-height: 50px;
+  background: #FFFFFF;
+  opacity: 0.2;
+  text-align: center;
+  color: #BEBEBE;
+}
+
+.form-button {
+  max-width: 255px;
+  min-height: 50px;
+  background-color: #d4c17f;
+  text-align: center;
+  font-weight: 700;
+}
+
 /*Blocks*/
 .header {
   display: -webkit-box;
@@ -376,15 +405,22 @@ a:hover {
 
 .cta__wrapper {
   margin-top: 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 30px;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+}
+
+.cta_text {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.cta__form-privacy {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #E7E7E7;
 }
 /*# sourceMappingURL=main.css.map */

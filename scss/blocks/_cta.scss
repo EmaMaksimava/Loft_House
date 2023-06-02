@@ -7,8 +7,20 @@
 
 .cta__wrapper {
   margin-top: 17px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
-  align-items: stretch;
+
+}
+
+.cta_text {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.cta__form-privacy {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #E7E7E7;
 }
