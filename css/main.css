@@ -142,10 +142,31 @@ a:hover {
 .input-form {
   max-width: 255px;
   min-height: 50px;
-  background: #FFFFFF;
-  opacity: 0.2;
+  background: #ffffff52;
   text-align: center;
+  color: #fff;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.input-form::-webkit-input-placeholder {
   color: #BEBEBE;
+}
+
+.input-form:-ms-input-placeholder {
+  color: #BEBEBE;
+}
+
+.input-form::-ms-input-placeholder {
+  color: #BEBEBE;
+}
+
+.input-form::placeholder {
+  color: #BEBEBE;
+}
+
+.input-form:focus {
+  background: #ffffff3a;
 }
 
 .form-button {
@@ -154,6 +175,13 @@ a:hover {
   background-color: #d4c17f;
   text-align: center;
   font-weight: 700;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.form-button:hover {
+  background-color: #d4c17f;
+  opacity: .85;
 }
 
 /*Blocks*/

@@ -50,11 +50,18 @@ a {
 .input-form {
   max-width: 255px;
   min-height: 50px;
-  background: #FFFFFF;
-  opacity: 0.2;
+  background: #ffffff52;
   text-align: center;
-  color: #BEBEBE;
+  color: $white;
+  transition: all .25s ease-in;
 
+  &::placeholder {
+    color: #BEBEBE;
+  }
+
+  &:focus {
+    background: #ffffff3a;
+  }
 }
 
 .form-button {
@@ -63,4 +70,10 @@ a {
   background-color: $accent;
   text-align: center;
   font-weight: 700;
+  transition: all .3s ease-in;
+
+  &:hover {
+    background-color: $accent;
+    opacity: .85;
+  }
 }
