@@ -474,6 +474,11 @@ a:hover {
   background: linear-gradient(0deg, rgba(36, 43, 51, 0.8), rgba(36, 43, 51, 0.8));
 }
 
+.presentation__link:hover .presentation__icon {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
 .presentation__icon {
   position: absolute;
   top: 50%;
@@ -481,5 +486,12 @@ a:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 10;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.presentation__icon:hover {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
 }
 /*# sourceMappingURL=main.css.map */
