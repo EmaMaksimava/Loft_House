@@ -333,11 +333,11 @@ a:hover {
 
 .benefits::after {
   content: 'II';
-  position: absolute;
-  top: 0;
   left: calc(50% + 555px);
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  position: absolute;
+  top: 0;
   line-height: 1.15;
   opacity: 0.03;
   color: #fff;
@@ -396,11 +396,11 @@ a:hover {
 
 .apartments::before {
   content: 'III';
-  position: absolute;
-  top: 0;
   right: calc(50% + 555px);
   -webkit-transform: translate(50%, -6%);
           transform: translate(50%, -6%);
+  position: absolute;
+  top: 0;
   line-height: 1.15;
   opacity: 0.03;
   color: #fff;
@@ -523,11 +523,11 @@ a:hover {
 
 .presentation::after {
   content: 'IV';
-  position: absolute;
-  top: 0;
   left: calc(50% + 555px);
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  position: absolute;
+  top: 0;
   line-height: 1.15;
   opacity: 0.03;
   color: #fff;
@@ -581,11 +581,11 @@ a:hover {
 
 .section-map::before {
   content: 'V';
-  position: absolute;
-  top: 0;
   right: calc(50% + 555px);
   -webkit-transform: translate(50%, -6%);
           transform: translate(50%, -6%);
+  position: absolute;
+  top: 0;
   line-height: 1.15;
   opacity: 0.03;
   color: #fff;
