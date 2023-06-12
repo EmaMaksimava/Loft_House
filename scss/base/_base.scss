@@ -47,6 +47,13 @@ a {
 
 }
 
+.form__second {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  align-items: center;
+}
+
 .input-form {
   max-width: 255px;
   min-height: 50px;

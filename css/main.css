@@ -139,6 +139,18 @@ a:hover {
           column-gap: 30px;
 }
 
+.form__second {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .input-form {
   max-width: 255px;
   min-height: 50px;
@@ -512,5 +524,13 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.cta-form__second {
+  margin: 180px auto;
+}
+
+.cta-form__wrapper {
+  margin-top: 38px;
 }
 /*# sourceMappingURL=main.css.map */
