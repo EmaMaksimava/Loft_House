@@ -327,7 +327,23 @@ a:hover {
 }
 
 .benefits {
-  margin: 120px auto;
+  padding: 120px 0;
+  position: relative;
+}
+
+.benefits::after {
+  content: 'II';
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  line-height: 1.15;
+  opacity: 0.03;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 25em;
+  font-weight: 700;
 }
 
 .benefits-row {
@@ -372,6 +388,25 @@ a:hover {
   font-size: 20px;
   line-height: 1.35;
   text-align: center;
+}
+
+.apartments {
+  position: relative;
+}
+
+.apartments::before {
+  content: 'III';
+  position: absolute;
+  top: 0;
+  right: calc(50% + 555px);
+  -webkit-transform: translate(50%, -6%);
+          transform: translate(50%, -6%);
+  line-height: 1.15;
+  opacity: 0.03;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 25em;
+  font-weight: 700;
 }
 
 .apartments__cards {
@@ -483,6 +518,22 @@ a:hover {
 
 .presentation {
   margin-bottom: 180px;
+  position: relative;
+}
+
+.presentation::after {
+  content: 'IV';
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  line-height: 1.15;
+  opacity: 0.03;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 25em;
+  font-weight: 700;
 }
 
 .presentation__link {
@@ -522,6 +573,25 @@ a:hover {
 .presentation__icon:hover {
   -webkit-filter: brightness(150%);
           filter: brightness(150%);
+}
+
+.section-map {
+  position: relative;
+}
+
+.section-map::before {
+  content: 'V';
+  position: absolute;
+  top: 0;
+  right: calc(50% + 555px);
+  -webkit-transform: translate(50%, -6%);
+          transform: translate(50%, -6%);
+  line-height: 1.15;
+  opacity: 0.03;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 25em;
+  font-weight: 700;
 }
 
 .section-map__map {
