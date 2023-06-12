@@ -91,3 +91,11 @@ a {
   background-color: #BEBEBE;
 
 }
+
+.item-network {
+  transition: all .3s ease-in;
+
+  &:hover {
+    opacity: .65;
+  }
+}
