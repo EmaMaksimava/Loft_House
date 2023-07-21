@@ -7,6 +7,11 @@
                url('./../img/header/Rectangle.jpg');
   padding-top: 30px;
   padding-bottom: 74px;
+
+  @include mediaTablet {
+    min-height: unset;
+    row-gap: 30px;
+  }
 }
 
 .header__top-row {
@@ -37,6 +42,11 @@
   font-weight: 700;
   font-size: 3em;
   text-align: center;
+
+  @include mediaTablet {
+    font-size: 2em;
+    padding-bottom: 80px;
+  }
 }
 
 .header__title-icon {
@@ -59,5 +69,12 @@
 .header__footer-row {
   display: flex;
   justify-content: space-between;
-  gap: 98px
+  gap: 98px;
+
+  @include mediaTablet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+  }
 }

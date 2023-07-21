@@ -23,4 +23,8 @@
   &__tel::before {
     background-image: url('./../img/icons/phone-call.svg');
   }
+
+  @include mediaTablet {
+    font-size: 16px;
+  }
 }
