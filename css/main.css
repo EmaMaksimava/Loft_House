@@ -714,6 +714,12 @@ a:hover {
   background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../img/cta/cta_bg.jpg"), #C4C4C4;
 }
 
+@media screen and (max-width: 999px) {
+  .cta {
+    padding: 100px 0;
+  }
+}
+
 .cta__wrapper {
   margin-top: 17px;
   display: -ms-grid;
@@ -721,6 +727,15 @@ a:hover {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+
+@media screen and (max-width: 999px) {
+  .cta__wrapper {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
 }
 
 .cta_text {

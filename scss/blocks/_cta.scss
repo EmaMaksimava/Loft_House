@@ -3,6 +3,10 @@
   min-height: 560px;
   padding: 180px 0;
   background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%),   linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url('./../img/cta/cta_bg.jpg'), #C4C4C4;
+
+  @include mediaTablet {
+    padding: 100px 0;
+  }
 }
 
 .cta__wrapper {
@@ -11,6 +15,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 
+  @include mediaTablet {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+
+  }
 }
 
 .cta_text {
