@@ -52,6 +52,11 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 30px;
   align-items: center;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .input-form {

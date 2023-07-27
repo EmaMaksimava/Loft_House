@@ -2,6 +2,8 @@
   margin-bottom: 180px;
   position: relative;
 
+  overflow: hidden;
+
   &::after {
     content: 'IV';
 

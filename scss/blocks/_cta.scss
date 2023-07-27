@@ -32,4 +32,8 @@
   font-size: 0.8rem;
   line-height: 1.2;
   color: #E7E7E7;
+
+  @include mediaTablet {
+    order: 4;
+  }
 }

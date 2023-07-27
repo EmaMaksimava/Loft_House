@@ -151,6 +151,15 @@ a:hover {
           align-items: center;
 }
 
+@media screen and (max-width: 999px) {
+  .form__second {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
 .input-form {
   max-width: 255px;
   min-height: 50px;
@@ -750,9 +759,18 @@ a:hover {
   color: #E7E7E7;
 }
 
+@media screen and (max-width: 999px) {
+  .cta__form-privacy {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
 .presentation {
   margin-bottom: 180px;
   position: relative;
+  overflow: hidden;
 }
 
 .presentation::after {
@@ -843,6 +861,12 @@ a:hover {
 
 .cta-form__second {
   margin: 180px auto;
+}
+
+@media screen and (max-width: 999px) {
+  .cta-form__second {
+    margin: 90px auto;
+  }
 }
 
 .cta-form__wrapper {
