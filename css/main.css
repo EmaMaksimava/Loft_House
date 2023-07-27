@@ -487,6 +487,7 @@ a:hover {
 .benefits {
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .benefits::after {
@@ -516,6 +517,21 @@ a:hover {
   gap: 70px;
 }
 
+@media screen and (max-width: 999px) {
+  .benefits-row {
+    display: -ms-grid;
+    display: grid;
+    gap: 40px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .benefits__item {
   text-align: center;
   display: -webkit-box;
@@ -534,9 +550,22 @@ a:hover {
           align-items: center;
 }
 
+@media screen and (max-width: 999px) {
+  .benefits__item {
+    gap: 28px;
+  }
+}
+
 .benefits__item-img {
   max-width: 80px;
   max-height: 80px;
+}
+
+@media screen and (max-width: 999px) {
+  .benefits__item-img {
+    max-width: 50px;
+    max-height: auto;
+  }
 }
 
 .benefits__item-text {
@@ -546,6 +575,13 @@ a:hover {
   font-size: 20px;
   line-height: 1.35;
   text-align: center;
+}
+
+@media screen and (max-width: 999px) {
+  .benefits__item-text {
+    max-width: auto;
+    font-size: 16px;
+  }
 }
 
 .apartments {
