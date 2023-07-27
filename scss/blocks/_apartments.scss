@@ -1,6 +1,8 @@
 .apartments {
   position: relative;
 
+  overflow: hidden;
+
   &::before {
     content: 'III';
 
@@ -17,6 +19,13 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px;
+
+  @include mediaTablet {
+    margin-top: 50px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: none;
+    gap:45px;
+  }
 
 }
 
@@ -51,6 +60,11 @@
       opacity: 1;
     }
   }
+
+  @include mediaTablet {
+    max-width: auto;
+    height: 250px;
+  }
 }
 
 .apartments__card-1 {
@@ -80,4 +94,8 @@
   left:50px;
 
   z-index: 2;
+
+  @include mediaTablet {
+    font-size: 1.2em;
+  }
 }

@@ -586,6 +586,7 @@ a:hover {
 
 .apartments {
   position: relative;
+  overflow: hidden;
 }
 
 .apartments::before {
@@ -612,6 +613,17 @@ a:hover {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 30px;
+}
+
+@media screen and (max-width: 999px) {
+  .apartments__cards {
+    margin-top: 50px;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    gap: 45px;
+  }
 }
 
 .apartments__card-item {
@@ -650,6 +662,13 @@ a:hover {
   opacity: 1;
 }
 
+@media screen and (max-width: 999px) {
+  .apartments__card-item {
+    max-width: auto;
+    height: 250px;
+  }
+}
+
 .apartments__card-1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 43, 51, 0)), to(#242B33)), url("./../img/cards/01.jpg");
   background-image: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url("./../img/cards/01.jpg");
@@ -679,6 +698,12 @@ a:hover {
   bottom: 44px;
   left: 50px;
   z-index: 2;
+}
+
+@media screen and (max-width: 999px) {
+  .apartments__card-header {
+    font-size: 1.2em;
+  }
 }
 
 .cta {
