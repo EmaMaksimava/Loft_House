@@ -8,9 +8,13 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="img/icons/building.svg" type="image/x-icon">
+
+  <script src="libs/phoneMask/mask_list.js" defer></script>
+  <script src="libs/phoneMask/mask.js" defer></script>
+  <script src="js/app.js" defer></script>
 </head>
 <body>
-  <header class="header">
+  <header class="header none">
     <div class="header__top">
       <div class="container">
         <div class="header__top-row">
@@ -26,7 +30,7 @@
               <ul class="nav__list">
                 <li><a href="#">О комплексе</a></li>
                 <li><a href="#">Район</a></li>
-                <li><a href="#">Каталог квартир</a></li>
+                <li><a href="#apartments">Каталог квартир</a></li>
                 <li><a href="#">Ипотека</a></li>
                 <li><a href="#">Контакты</a></li>
               </ul>
@@ -34,7 +38,7 @@
           </div>
 
           <div class="header__nav-btn">
-          
+
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
               <span></span>
@@ -42,7 +46,7 @@
             <ul class="menu__box">
               <li><a class="menu__item" href="#">О комплексе</a></li>
               <li><a class="menu__item" href="#">Район</a></li>
-              <li><a class="menu__item" href="#">Каталог квартир</a></li>
+              <li><a class="menu__item" href="#apartments">Каталог квартир</a></li>
               <li><a class="menu__item" href="#">Ипотека</a></li>
               <li><a class="menu__item" href="#">Контакты</a></li>
             </ul>
@@ -71,7 +75,7 @@
   </header>
 
   <main>
-    <section class="benefits" id="benefits">
+    <section class="benefits none1" id="benefits">
       <h2 class="visually-hidden"> Преимущества ЖК</h2>
       <div class="container">
         <div class="benefits-row">
@@ -99,7 +103,7 @@
       </div>
     </section>
 
-    <section class="apartments">
+    <section class="apartments none1" id="apartments">
       <div class="container">
         <h2 class="section-header">Наши квартиры</h2>
         <div class="apartments__cards">
@@ -121,7 +125,7 @@
 
     </section>
 
-    <section class="cta">
+    <section class="cta none1">
       <div class="container">
         <h2 class="section-header">Хотите посмотреть?</h2>
         <div class="cta__wrapper">
@@ -131,7 +135,7 @@
           <div class="cta__form">
             <form action="" class="form">
               <input type="text" class="input-form" placeholder="Ваше имя">
-              <input type="tel" class="input-form" placeholder="Ваш телефон" name="" id="">
+              <input type="tel" class="input-form" placeholder="Ваш телефон" data-phone-input>
               <p class="cta__form-privacy">*Мы никому не передаем ваши данные. <br> И не сохраняем ваш номер в базу.</p>
               <button type="submit" class="form-button">Посмотреть район</button>
             </form>
@@ -140,7 +144,7 @@
       </div>
     </section>
 
-    <section class="presentation">
+    <section class="presentation none1">
       <div class="container">
         <h2 class="visually-hidden">Presentation</h2>
 
@@ -151,7 +155,7 @@
       </div>
     </section>
 
-    <section class="section-map">
+    <section class="section-map none1">
       <div class="container">
         <h2 class="section-header">Район на карте</h2>
         <div class="section-map__map">
@@ -160,7 +164,7 @@
       </div>
     </section>
 
-    <section class="cta-form__second">
+    <section class="cta-form__second none1">
       <div class="container">
         <h2 class="section-header">Есть вопросы?</h2>
         <div class="cta-form__wrapper">
@@ -168,7 +172,7 @@
             <form action="" class="form form__second">
               <p class="cta__form-privacy">*Мы никому не передаем ваши данные. <br> И не сохраняем ваш номер в базу.</p>
               <input type="text" class="input-form" placeholder="Ваше имя">
-              <input type="tel" class="input-form" placeholder="Ваш телефон" name="" id="">
+              <input type="tel" class="input-form" placeholder="Ваш телефон" data-phone-input>
               <button type="submit" class="form-button">Посмотреть район</button>
             </form>
           </div>
@@ -178,7 +182,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer none1">
     <div class="container">
       <div class="footer__wrapper">
         <div class="header__logo">
@@ -205,7 +209,7 @@
               <li class=footer__item-info><a href="#">Сервисные услуги</a></li>
               <li class=footer__item-info><a href="#">Экологическая устойчивость</a></li>
               <li class=footer__item-info><a href="#">Инвестиционные возможности</a></li>
-              <li><a href="#">Программа лояльности</a></li>
+              <li class=footer__item-info><a href="#">Программа лояльности</a></li>
             </ul>
           </nav>
         </div>

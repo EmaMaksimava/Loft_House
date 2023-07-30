@@ -5,17 +5,31 @@
   padding-top: 60px;
   padding-bottom: 45px;
 
+  @include mediaTablet {
+    padding-top: 30px;
+  }
 }
 
 .footer__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: start;
+
+  @include mediaTablet {
+    grid-template-columns: none;
+    grid-template-rows: max-content max-content max-content max-content;
+    gap: 5px;
+  }
 }
 
 .footer-nav__list {
   display: flex;
   flex-direction: column;
+
+  @include mediaTablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__item-info {
@@ -23,6 +37,10 @@
   line-height: 1rem;
   letter-spacing: 0.05em;
   margin-bottom: 15px;
+
+  @include mediaTablet {
+    font-size: 0.6rem;
+  }
 }
 
 .item-info__email {
@@ -40,4 +58,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 5%;
+
+  @include mediaTablet {
+    align-content: center;
+  }
 }

@@ -4,7 +4,8 @@ body {
   font-family: $font-main;
   background-color: $dark;
   font-size: 16px;
-  color: $white
+  color: $white;
+
 }
 
 a {
@@ -20,6 +21,7 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1140px;
+  scroll-behavior: smooth;
 }
 
 .visually-hidden {
@@ -45,6 +47,11 @@ a {
   row-gap: 35px;
   column-gap: 30px;
 
+  @include mediaTablet {
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+  }
+
 }
 
 .form__second {
@@ -54,8 +61,8 @@ a {
   align-items: center;
 
   @include mediaTablet {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
   }
 }
 
@@ -103,4 +110,8 @@ a {
   &:hover {
     opacity: .65;
   }
+}
+
+.none {
+  display: none;
 }

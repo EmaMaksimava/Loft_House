@@ -9,6 +9,12 @@
   }
 }
 
+.cta__form {
+  @include mediaTablet {
+    margin: 0 auto;
+  }
+}
+
 .cta__wrapper {
   margin-top: 17px;
   display: grid;
@@ -34,6 +40,8 @@
   color: #E7E7E7;
 
   @include mediaTablet {
+    font-size: 0.6rem;
     order: 4;
+    justify-self: flex-start;
   }
 }
