@@ -98,9 +98,12 @@ a {
 }
 
 .map {
-  width: 100%;
+  width: 90%;
   height: 358px;
   background-color: #BEBEBE;
+  overflow: hidden;
+  filter: sepia(40%);
+  border-radius: 8px;
 
 }
 
