@@ -1,0 +1,70 @@
+.benefits {
+  padding: 120px 0;
+  position: relative;
+
+  overflow: hidden;
+
+
+  &::after {
+    content: 'II';
+
+    left: calc(50% + 555px);
+    transform: translate(-50%, 0);
+
+    @include decorNumber();
+  }
+}
+
+.benefits-row {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+
+  @include mediaTablet {
+    display: grid;
+    gap:40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+.benefits__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+  justify-content: center;
+  align-items: center;
+
+  @include mediaTablet {
+    gap:28px;
+  }
+}
+
+.benefits__item-img {
+  max-width: 80px;
+  max-height: 80px;
+
+  @include mediaTablet {
+    max-width: 50px;
+    max-height: auto;
+  }
+}
+
+.benefits__item-text {
+  max-width: 193px;
+  font-family: $font-secondury;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.35;
+  text-align: center;
+
+  @include mediaTablet {
+    max-width: auto;
+    font-size: 16px;
+
+  }
+}

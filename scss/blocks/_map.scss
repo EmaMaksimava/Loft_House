@@ -1,0 +1,20 @@
+.section-map {
+  position: relative;
+
+  &::before {
+    content: 'V';
+
+    right: calc(50% + 555px);
+    transform: translate(50%, -6%);
+
+    @include decorNumber();
+  }
+}
+
+.section-map__map {
+  margin-top: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

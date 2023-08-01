@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: $font-main;
+  background-color: $dark;
+  font-size: 16px;
+  color: $white;
+
+}
+
+a {
+  color: $white;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+
+  position: absolute;
+  white-space: nowrap;
+}
+
+.section-header {
+  font-size: 2.25em;
+  font-family: $font-accent;
+  color: $accent;
+  line-height: 1.33;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 35px;
+  column-gap: 30px;
+
+  @include mediaTablet {
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+  }
+
+}
+
+.form__second {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  align-items: center;
+
+  @include mediaTablet {
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+  }
+}
+
+.input-form {
+  max-width: 255px;
+  min-height: 50px;
+  background: #ffffff52;
+  text-align: center;
+  color: $white;
+  transition: all .25s ease-in;
+
+  &::placeholder {
+    color: #BEBEBE;
+  }
+
+  &:focus {
+    background: #ffffff3a;
+  }
+}
+
+.form-button {
+  max-width: 255px;
+  min-height: 50px;
+  background-color: $accent;
+  text-align: center;
+  font-weight: 700;
+  transition: all .3s ease-in;
+
+  &:hover {
+    background-color: $accent;
+    opacity: .85;
+  }
+}
+
+.map {
+  width: 90%;
+  height: 358px;
+  background-color: #BEBEBE;
+  overflow: hidden;
+  filter: sepia(40%);
+  border-radius: 8px;
+
+}
+
+.item-network {
+  transition: all .3s ease-in;
+
+  &:hover {
+    opacity: .65;
+  }
+}
+
+.none {
+  display: none;
+}
